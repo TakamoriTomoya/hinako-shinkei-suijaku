@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+<!-- りんご柄の背景タイル(りんごの位置は一度ランダムに決めて固定) -->
+<rect width="320" height="320" fill="#d9efc2"/>
+<circle cx="140.7" cy="110.7" r="2.9" fill="#e8f6da"/>
+<circle cx="4.8" cy="220.7" r="2.6" fill="#e8f6da"/>
+<circle cx="232.2" cy="162.2" r="2.8" fill="#e8f6da"/>
+<circle cx="32.9" cy="153.3" r="2.6" fill="#e8f6da"/>
+<circle cx="309.6" cy="45.1" r="2.8" fill="#e8f6da"/>
+<circle cx="276.5" cy="50.5" r="2.5" fill="#e8f6da"/>
+<circle cx="119.6" cy="288.3" r="2.2" fill="#e8f6da"/>
+<circle cx="205.0" cy="46.9" r="1.8" fill="#e8f6da"/>
+<circle cx="96.1" cy="293.7" r="2.7" fill="#e8f6da"/>
+<circle cx="233.4" cy="124.5" r="2.6" fill="#e8f6da"/>
+<circle cx="145.6" cy="260.2" r="2.7" fill="#e8f6da"/>
+<circle cx="279.3" cy="167.2" r="1.5" fill="#e8f6da"/>
+<circle cx="311.7" cy="131.4" r="1.8" fill="#e8f6da"/>
+<circle cx="285.6" cy="258.7" r="3.0" fill="#e8f6da"/>
+<circle cx="295.1" cy="20.5" r="2.7" fill="#e8f6da"/>
+<circle cx="68.7" cy="200.6" r="2.6" fill="#e8f6da"/>
+<circle cx="198.6" cy="66.5" r="2.3" fill="#e8f6da"/>
+<circle cx="319.8" cy="226.6" r="3.0" fill="#e8f6da"/>
+<circle cx="7.7" cy="17.1" r="2.7" fill="#e8f6da"/>
+<circle cx="85.6" cy="80.8" r="2.6" fill="#e8f6da"/>
+<circle cx="150.0" cy="90.9" r="1.5" fill="#e8f6da"/>
+<circle cx="42.2" cy="53.9" r="2.1" fill="#e8f6da"/>
+<circle cx="171.5" cy="1.7" r="1.6" fill="#e8f6da"/>
+<circle cx="184.7" cy="78.0" r="1.6" fill="#e8f6da"/>
+<circle cx="14.7" cy="143.0" r="1.5" fill="#e8f6da"/>
+<circle cx="129.5" cy="40.7" r="2.4" fill="#e8f6da"/>
+<circle cx="283.8" cy="125.1" r="1.9" fill="#e8f6da"/>
+<circle cx="144.5" cy="54.4" r="2.0" fill="#e8f6da"/>
+<circle cx="178.7" cy="173.5" r="1.7" fill="#e8f6da"/>
+<circle cx="31.2" cy="237.5" r="2.7" fill="#e8f6da"/>
+<g transform="translate(88.7 172.0) rotate(-5) scale(1.0)"><path d="M0 -10 Q1 -16 4 -20" stroke="#6b3a1e" stroke-width="2.6" fill="none" stroke-linecap="round"/><ellipse cx="9" cy="-17" rx="6" ry="3" transform="rotate(-25 9 -17)" fill="#4caf50"/><path d="M0 -10 C-4 -15 -18 -14 -18 0 C-18 12 -8 20 -4 18 C-2 17 2 17 4 18 C8 20 18 12 18 0 C18 -14 4 -15 0 -10 Z" fill="#e8453c"/><ellipse cx="-9" cy="-3" rx="3" ry="5.5" transform="rotate(20 -9 -3)" fill="#ffffff" opacity="0.4"/></g>
+<g transform="translate(41.8 27.6) rotate(13) scale(1.0)"><path d="M0 -10 Q1 -16 4 -20" stroke="#6b3a1e" stroke-width="2.6" fill="none" stroke-linecap="round"/><ellipse cx="9" cy="-17" rx="6" ry="3" transform="rotate(-25 9 -17)" fill="#4caf50"/><path d="M0 -10 C-4 -15 -18 -14 -18 0 C-18 12 -8 20 -4 18 C-2 17 2 17 4 18 C8 20 18 12 18 0 C18 -14 4 -15 0 -10 Z" fill="#e8453c"/><ellipse cx="-9" cy="-3" rx="3" ry="5.5" transform="rotate(20 -9 -3)" fill="#ffffff" opacity="0.4"/></g>
+<g transform="translate(294.8 151.9) rotate(13) scale(1.0)"><path d="M0 -10 Q1 -16 4 -20" stroke="#6b3a1e" stroke-width="2.6" fill="none" stroke-linecap="round"/><ellipse cx="9" cy="-17" rx="6" ry="3" transform="rotate(-25 9 -17)" fill="#4caf50"/><path d="M0 -10 C-4 -15 -18 -14 -18 0 C-18 12 -8 20 -4 18 C-2 17 2 17 4 18 C8 20 18 12 18 0 C18 -14 4 -15 0 -10 Z" fill="#e8453c"/><ellipse cx="-9" cy="-3" rx="3" ry="5.5" transform="rotate(20 -9 -3)" fill="#ffffff" opacity="0.4"/></g>
+<g transform="translate(184.8 105.9) rotate(-19) scale(1.0)"><path d="M0 -10 Q1 -16 4 -20" stroke="#6b3a1e" stroke-width="2.6" fill="none" stroke-linecap="round"/><ellipse cx="9" cy="-17" rx="6" ry="3" transform="rotate(-25 9 -17)" fill="#4caf50"/><path d="M0 -10 C-4 -15 -18 -14 -18 0 C-18 12 -8 20 -4 18 C-2 17 2 17 4 18 C8 20 18 12 18 0 C18 -14 4 -15 0 -10 Z" fill="#e8453c"/><ellipse cx="-9" cy="-3" rx="3" ry="5.5" transform="rotate(20 -9 -3)" fill="#ffffff" opacity="0.4"/></g>
+<g transform="translate(219.5 263.0) rotate(9) scale(1.0)"><path d="M0 -10 Q1 -16 4 -20" stroke="#6b3a1e" stroke-width="2.6" fill="none" stroke-linecap="round"/><ellipse cx="9" cy="-17" rx="6" ry="3" transform="rotate(-25 9 -17)" fill="#4caf50"/><path d="M0 -10 C-4 -15 -18 -14 -18 0 C-18 12 -8 20 -4 18 C-2 17 2 17 4 18 C8 20 18 12 18 0 C18 -14 4 -15 0 -10 Z" fill="#e8453c"/><ellipse cx="-9" cy="-3" rx="3" ry="5.5" transform="rotate(20 -9 -3)" fill="#ffffff" opacity="0.4"/></g>
+</svg>

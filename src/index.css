@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Baloo 2", "M PLUS Rounded 1c", sans-serif; /* 英数字はBaloo 2、日本語は丸ゴシック */
+  --font-body: "Nunito", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+
+  /* 背景 */
+  --color-bg-outer: #f2efe6;
+  --color-bg-cream: #fffbf0;
+  --color-bg-yellow-grad: #fff6d9;
+  --color-play-apple: #d9efc2;
+
+  /* カードの裏: 赤いりんご */
+  --color-apple: #e8453c;
+  --color-apple-shadow: #b3261e;
+
+  /* ボタン */
+  --color-primary: #ff6f91;
+  --color-primary-hover: #ff8aa6;
+  --color-primary-shadow: #d94f6e;
+  --color-secondary: #ffc93c;
+  --color-secondary-hover: #ffd666;
+  --color-secondary-shadow: #d9a81e;
+  /* ホームのボタン(緑系。ひとりで遊ぶは濃い緑、オンラインで対戦は黄緑) */
+  --color-green: #34a853;
+  --color-green-hover: #47b866;
+  --color-green-shadow: #23803d;
+  --color-lime: #8cc63f;
+  --color-lime-hover: #9bd150;
+  --color-lime-shadow: #6a9a2a;
+  --color-ghost-bg: #eaf7ee;
+  --color-ghost-hover: #d9f2e0;
+  --color-ghost-text: #2fb870;
+  --color-ghost-shadow: #cdebd6;
+
+  /* テキスト */
+  --color-text-dark: #4a4237;
+  --color-text-light: #8a8168;
+
+  /* プレイヤーチップ */
+  --color-p1-bg: #ffe1ea;
+  --color-p1-text: #d9436b;
+  --color-p2-bg: #e1f0ff;
+  --color-p2-text: #1e80c9;
+
+  /* 画像枠 */
+  --color-frame-yellow: #ffe7a3;
+}
+
+@layer base {
+  body {
+    @apply m-0 flex justify-center bg-bg-outer text-text-dark font-body;
+  }
+
+  /* bodyのdisplay:flexの子として幅がshrink-to-fitになり、
+     width:100%指定の子孫が0幅に潰れてしまうため明示する */
+  #root {
+    @apply w-full;
+  }
+}
+
+/* りんご柄の背景の上に置く白文字(フクロ文字)用。縁取りはりんごのへたの茶色 */
+.text-outline {
+  /* 円周上に影を細かく並べて、角のない丸い縁取りにする */
+  text-shadow:
+    1.00px 0.00px 0 #6b3a1e,
+    0.71px 0.71px 0 #6b3a1e,
+    0.00px 1.00px 0 #6b3a1e,
+    -0.71px 0.71px 0 #6b3a1e,
+    -1.00px 0.00px 0 #6b3a1e,
+    -0.71px -0.71px 0 #6b3a1e,
+    0.00px -1.00px 0 #6b3a1e,
+    0.71px -0.71px 0 #6b3a1e,
+    2.00px 0.00px 0 #6b3a1e,
+    1.85px 0.77px 0 #6b3a1e,
+    1.41px 1.41px 0 #6b3a1e,
+    0.77px 1.85px 0 #6b3a1e,
+    0.00px 2.00px 0 #6b3a1e,
+    -0.77px 1.85px 0 #6b3a1e,
+    -1.41px 1.41px 0 #6b3a1e,
+    -1.85px 0.77px 0 #6b3a1e,
+    -2.00px 0.00px 0 #6b3a1e,
+    -1.85px -0.77px 0 #6b3a1e,
+    -1.41px -1.41px 0 #6b3a1e,
+    -0.77px -1.85px 0 #6b3a1e,
+    0.00px -2.00px 0 #6b3a1e,
+    0.77px -1.85px 0 #6b3a1e,
+    1.41px -1.41px 0 #6b3a1e,
+    1.85px -0.77px 0 #6b3a1e,
+    2.50px 0.00px 0 #6b3a1e,
+    2.31px 0.96px 0 #6b3a1e,
+    1.77px 1.77px 0 #6b3a1e,
+    0.96px 2.31px 0 #6b3a1e,
+    0.00px 2.50px 0 #6b3a1e,
+    -0.96px 2.31px 0 #6b3a1e,
+    -1.77px 1.77px 0 #6b3a1e,
+    -2.31px 0.96px 0 #6b3a1e,
+    -2.50px 0.00px 0 #6b3a1e,
+    -2.31px -0.96px 0 #6b3a1e,
+    -1.77px -1.77px 0 #6b3a1e,
+    -0.96px -2.31px 0 #6b3a1e,
+    0.00px -2.50px 0 #6b3a1e,
+    0.96px -2.31px 0 #6b3a1e,
+    1.77px -1.77px 0 #6b3a1e,
+    2.31px -0.96px 0 #6b3a1e;
+}
+
+/* 背景: りんご柄(りんごの位置を固定したタイルを敷き詰める) */
+.bg-apple {
+  background-color: var(--color-play-apple);
+  background-image: url("/images/apple-bg.svg");
+  background-size: 320px 320px;
+}
+
+/* カードをめくる3D回転。表(写真)と裏を背中合わせに重ね、裏返った面は描かない */
+.card-scene {
+  perspective: 800px;
+}
+
+.card-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.4, 1.2);
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-back-face {
+  transform: rotateY(180deg);
+}
+
+/* そろったカードを一瞬ぽんと膨らませる */
+.matched-pop {
+  animation: matched-pop 0.45s ease-out 0.35s;
+}
+
+@keyframes matched-pop {
+  0%,
+  100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.08;
+  }
+}
+
+/* 「〇〇ひなこ！」や結果の見出しを弾むように出す */
+.toast-pop {
+  animation: toast-pop 0.35s cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+@keyframes toast-pop {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-inner {
+    transition: none;
+  }
+  .matched-pop,
+  .toast-pop {
+    animation: none;
+  }
+}
